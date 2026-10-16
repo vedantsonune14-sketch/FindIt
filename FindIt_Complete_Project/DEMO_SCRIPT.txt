@@ -1,0 +1,27 @@
+FindIt — 3–5 Minute Demonstration Script
+
+1. Introduction — 30 seconds
+"FindIt is a Python desktop application for managing college lost-and-found reports. Its main DSA feature is a heuristic matching algorithm that ranks found reports against a selected lost report."
+
+2. Dashboard — 30 seconds
+"These statistics are read from SQLite, so they are not hardcoded. I can see lost reports, found reports, active reports and reunited reports."
+
+3. Add reports — 45 seconds
+"I can report a lost or found item. Required fields are validated, dates use YYYY-MM-DD, and contact information is optional. Each report receives an automatically generated database ID."
+
+4. Demo data — 20 seconds
+"I can load fictional demonstration records. The loader checks existing signatures so running it repeatedly does not create duplicates."
+
+5. Matching — 60 seconds
+"I select an active lost report and click Find Matches. The application compares it only with active found reports. Category contributes 30 points, item-name similarity 25, color 15, location 15 and description keywords 15."
+
+"The result is sorted from highest to lowest score. The explanation shows which attributes contributed. The score is only a heuristic; it does not prove ownership."
+
+6. Contact — 30 seconds
+"Contact information is intentionally hidden from the public report table. I must explicitly choose View Contact. The dialog reminds the user to verify ownership before returning the item."
+
+7. DSA explanation — 45 seconds
+"The project uses dictionaries for record representation and ID-based access, sets for keyword intersection, string similarity through difflib, and sorting to rank candidates."
+
+8. Closing — 20 seconds
+"FindIt is deliberately local and simple. It demonstrates a complete practical DSA workflow without external APIs, cloud services or machine learning."
